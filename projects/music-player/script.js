@@ -6,7 +6,14 @@ const songsList = [
         src: "/projects/music-player/assets/1.mp3",
         cover: "/projects/music-player/assets/1.jpg"
     },
+    {
+        name: "Livin' On A Prayer",
+        artist: "Bon Jovi",
+        src: "/projects/music-player/assets/2.mp3",
+        cover: "/projects/music-player/assets/2.jpg"
+    },
 ];
+
 
 const artistName = document.querySelector('.artist-name');
 const musicName = document.querySelector('.song-name');
