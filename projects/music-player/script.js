@@ -6,18 +6,6 @@ const songsList = [
         src: "/projects/music-player/assets/1.mp3",
         cover: "/projects/music-player/assets/1.jpg"
     },
-    {
-        name: "Blue Skies",
-        artist: "Silent Partner",
-        src: "assets/2.mp3",
-        cover: "assets/2.jpg"
-    },
-    {
-        name: "Crimson Fly",
-        artist: "Huma-Huma",
-        src: "assets/3.mp3",
-        cover: "assets/3.jpg"
-    }
 ];
 
 const artistName = document.querySelector('.artist-name');
