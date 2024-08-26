@@ -1,16 +1,16 @@
 
 const songsList = [
     {
-        name: "Jazz In Paris",
-        artist: "Media Right Productions",
-        src: "/projects/music-player/assets/1.mp3",
-        cover: "/projects/music-player/assets/1.jpg"
-    },
-    {
         name: "Livin' On A Prayer",
         artist: "Bon Jovi",
         src: "/projects/music-player/assets/2.mp3",
         cover: "/projects/music-player/assets/2.jpg"
+    },
+    {
+        name: "Giving Me",
+        artist: "Jazzy",
+        src: "/projects/music-player/assets/3.mp3",
+        cover: "/projects/music-player/assets/3.jpg"
     },
 ];
 
