@@ -7,7 +7,8 @@ const songsList = [
         cover: "/projects/music-player/assets/1.jpg"
     },
     {
-        name: "Livin' On A Prayer",
+        name: "Livin' On A Prayer", 
+        
         artist: "Bon Jovi",
         src: "/projects/music-player/assets/2.mp3",
         cover: "/projects/music-player/assets/2.jpg"
@@ -17,6 +18,12 @@ const songsList = [
         artist: "Jazzy",
         src: "/projects/music-player/assets/3.mp3",
         cover: "/projects/music-player/assets/3.jpg"
+    },
+    {
+        name: "Heaven Is A Place On Earth",
+        artist: "Brother EWWWW",
+        src: "/projects/music-player/assets/4.mp3",
+        cover: "/projects/music-player/assets/4.jpg"
     },
 ];
 
