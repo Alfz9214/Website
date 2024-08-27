@@ -25,6 +25,12 @@ const songsList = [
         src: "/projects/music-player/assets/4.mp3",
         cover: "/projects/music-player/assets/4.jpg"
     },
+    {
+        name: "I like the way you kiss me",
+        artist: "Artemas",
+        src: "/projects/music-player/assets/5.mp3",
+        cover: "/projects/music-player/assets/5.jpg"
+    },
 ];
 
 
