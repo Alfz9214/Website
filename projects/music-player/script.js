@@ -31,6 +31,12 @@ const songsList = [
         src: "/projects/music-player/assets/5.mp3",
         cover: "/projects/music-player/assets/5.jpg"
     },
+    {
+        name: "Children Of The Night",
+        artist: "Nakatomi",
+        src: "/projects/music-player/assets/6.mp3",
+        cover: "/projects/music-player/assets/6.jpg"
+    },
 ];
 
 
