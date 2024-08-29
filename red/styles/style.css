@@ -3,3 +3,12 @@
 html {
     font-family: 'Roboto', 'Sans Serif' 
 }
+
+a {
+    color: rgba(13, 43, 141, 0.788);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
