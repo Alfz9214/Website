@@ -1,3 +1,5 @@
+const { func } = require("prop-types");
+
 var questions = [{
     question: "What is my name?",
     answers: {
@@ -38,6 +40,14 @@ function showQuestions(questions, quizContainer) {
         }
         output.push(
             "<div class='question'>" + questions[i].question + "</div>" +
-            "<div class='answers'>" + answers.join('') + "</div>"
+            "<div class='answers'>" + answers.join("") + "</div>"
         );
     }
+    quizContainer.innerHTML = output.join("")
+
+ function showResults(questions, quizContainer, resultsContainer) {
+    var answerContainers = quizContainer.querySelectorAll(".answers")
+    var userAnswer = "";
+ }
+
+};  
