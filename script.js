@@ -24,5 +24,3 @@ link2.addEventListener('click', () => {
 link3.addEventListener('click', () => {
     scrollToElement('.column');
 });
-
-alert("Hello, welcome to my new site! hope you enjoy!")
