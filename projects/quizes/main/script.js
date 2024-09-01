@@ -1,6 +1,4 @@
-const { func } = require("prop-types");
-
-var questions = [{
+const questions = [{
     question: "What is my name?",
     answers: {
         a: 'Alfie',
@@ -10,18 +8,18 @@ var questions = [{
     correctAnswer: "a"
 }];
 
-var quizContainer = document.getElementById("quiz")
-var submitButton = document.getElementById("submit")
-var resultsContainer = document.getElementById("results")
+var quizContainer = document.getElementById("quiz");
+var submitButton = document.getElementById("submit");
+var resultsContainer = document.getElementById("results");
 
-makeQuiz(questions, quizContainer, resultsContainer, submitButton)
+makeQuiz(questions, quizContainer, resultsContainer, submitButton);
 
 function makeQuiz(questions, quizContainer, resultsContainer, submitButton) {
     showQuestions(questions, quizContainer);
     
     submitButton.onclick = function() {
         showResults(questions, quizContainer, resultsContainer);
-    }
+    };
 }
 
 function showQuestions(questions, quizContainer) {
@@ -43,11 +41,21 @@ function showQuestions(questions, quizContainer) {
             "<div class='answers'>" + answers.join("") + "</div>"
         );
     }
-    quizContainer.innerHTML = output.join("")
+    quizContainer.innerHTML = output.join("");
+}
 
- function showResults(questions, quizContainer, resultsContainer) {
-    var answerContainers = quizContainer.querySelectorAll(".answers")
+function showResults(questions, quizContainer, resultsContainer) {
+    var answerContainers = quizContainer.querySelectorAll(".answers");
     var userAnswer = "";
- }
+    var numCorrect = 0;
 
-};  
+    for (var i = 0; i < questions.length; i++) {
+        userAnswer = (answerContainers[i].querySelector("input[name=question" + i + "]:checked") || {}).value;
+        
+        if (userAnswer === questions[i].correctAnswer) {
+            numCorrect++;
+        }
+    }
+
+    resultsContainer.innerHTML = numCorrect + " out of " + questions.length;
+}
