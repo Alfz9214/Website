@@ -5,7 +5,7 @@ shortBtn.addEventListener('click', shortenUrl);
 
 function shortenUrl() {
     var originalUrl = document.getElementById("originalUrl").value;
-    var apiUrl = "https://tinyurl.com/api-create.php?url=" + encodeURIComponent(originalUrl);
+    var apiUrl = "https://tinyurl.com/api-create.phpurl=" + encodeURIComponent(originalUrl);
     shortenedUrlTextarea = document.getElementById("shortenedUrl");
 
     fetch(apiUrl).then(response => response.text()).then(data => {
