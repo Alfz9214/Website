@@ -406,3 +406,15 @@ footer .column > a:hover{
 #ddos-popup.fade-out {
     opacity: 0;
 }
+
+#ddos-learn-more {
+    color: white;
+    text-decoration: underline;
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+}
+
+#ddos-learn-more:hover {
+    text-decoration: none;
+}
