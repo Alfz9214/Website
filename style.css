@@ -410,10 +410,15 @@ footer .column > a:hover{
 #ddos-learn-more {
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 14px; /* Ensure this matches the font size of the text above it */
     display: block;
     margin-top: 10px;
     position: relative;
+}
+
+#ddos-learn-more .arrow {
+    font-weight: bold;
+    margin-right: 5px; /* Space between arrow and text */
 }
 
 #ddos-learn-more::after {
@@ -429,13 +434,4 @@ footer .column > a:hover{
 
 #ddos-learn-more:hover::after {
     width: 100%;
-}
-
-@keyframes fadeInOut {
-    0%, 100% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
 }
