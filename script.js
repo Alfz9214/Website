@@ -24,3 +24,15 @@ link2.addEventListener('click', () => {
 link3.addEventListener('click', () => {
     scrollToElement('.column');
 });
+
+window.onload = function() {
+    document.getElementById('ddos-popup').style.display = 'block';
+
+    document.getElementById('ddos-close').onclick = function() {
+        var popup = document.getElementById('ddos-popup');
+        popup.classList.add('fade-out');
+        setTimeout(function() {
+            popup.style.display = 'none';
+        }, 500); // Time matches the transition duration in CSS
+    };
+};
