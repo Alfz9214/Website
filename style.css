@@ -381,3 +381,28 @@ footer .column > a:hover{
         grid-template-columns: 1fr 150px;
     }
 }
+#ddos-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+}
+
+#ddos-popup #ddos-close {
+    margin-left: 15px;
+    font-size: 18px;
+    color: white;
+    float: right;
+}
+
+#ddos-popup.fade-out {
+    opacity: 0;
+}
