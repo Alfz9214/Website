@@ -413,12 +413,22 @@ footer .column > a:hover{
     font-size: 14px;
     display: block;
     margin-top: 10px;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out;
+    position: relative;
 }
 
-#ddos-learn-more:hover {
-    animation: fadeInOut 1s ease-in-out forwards;
+#ddos-learn-more::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    width: 0;
+    background-color: white;
+    transition: width 0.5s ease-in-out;
+}
+
+#ddos-learn-more:hover::after {
+    width: 100%;
 }
 
 @keyframes fadeInOut {
