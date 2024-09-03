@@ -409,12 +409,23 @@ footer .column > a:hover{
 
 #ddos-learn-more {
     color: white;
-    text-decoration: underline;
+    text-decoration: none;
     font-size: 14px;
     display: block;
     margin-top: 10px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
 
 #ddos-learn-more:hover {
-    text-decoration: none;
+    animation: fadeInOut 1s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
 }
