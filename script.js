@@ -25,8 +25,7 @@ link3.addEventListener('click', () => {
     scrollToElement('.column');
 });
 
-window.onload = function() {
-    document.getElementById('ddos-popup').style.display = 'block';
+
 
     document.getElementById('ddos-close').onclick = function() {
         var popup = document.getElementById('ddos-popup');
