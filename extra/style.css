@@ -2,4 +2,7 @@
 
 html {
     font-family: 'Roboto', 'Sans Serif';
+    padding: 20px; 
+    font-size: large;
+    font-weight: bold;
 }
