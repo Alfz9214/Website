@@ -9,3 +9,21 @@ html {
     justify-content: center;
     justify-items: inherit;
 }
+
+body {
+    justify-content: center;
+    justify-items: center;
+}
+p {
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+h5 {
+    font-weight: normal;
+}
