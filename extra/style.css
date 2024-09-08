@@ -5,4 +5,7 @@ html {
     padding: 20px; 
     font-size: large;
     font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    justify-items: inherit;
 }
