@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Reader</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .card-reader {
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            width: 300px;
+            text-align: center;
+        }
+        .card-reader h2 {
+            margin-bottom: 20px;
+        }
+        .card-reader input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .card-reader p {
+            margin: 5px 0;
+        }
+        .card-data {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card-reader">
+    <h2>Card Reader</h2>
+    <input type="text" id="cardInput" placeholder="Swipe card here" oninput="readCard()">
+    <p id="status">Waiting for card...</p>
+    <div id="cardData" class="card-data"></div>
+</div>
+
+<script>
+    function readCard() {
+        const input = document.getElementById('cardInput').value;
+        const status = document.getElementById('status');
+        const cardData = document.getElementById('cardData');
+
+        if (input) {
+            status.textContent = 'Card read successfully!';
+            cardData.textContent = input;
+        } else {
+            status.textContent = 'Waiting for card...';
+            cardData.textContent = '';
+        }
+    }
+</script>
+
+</body>
+</html>
