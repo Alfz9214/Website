@@ -1,3 +1,3 @@
 setTimeout(function() {
-    document.body.innerHTML = '<h1>This is the new content</h1>';
-}, 3000); // Change content after 3 seconds
+    document.body.innerHTML = '<h1>HEHE 😂 <span class="emoji">😂</span></h1> <p>Please Leave Or Your Device Gon  Boom Boom</p>';
+}, 3000); 
