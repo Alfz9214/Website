@@ -134,3 +134,8 @@ body{
         transform: rotateZ(360deg);
     }
 }
+
+.small {
+    font-size: x-small;
+    font-family: Arial, Helvetica, sans-serif;
+}
