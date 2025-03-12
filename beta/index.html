@@ -3,10 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Personal LOA Calendar - Alfz Aviation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        header {
+            font-size: 28px;
+            font-weight: bold;
+            padding: 40px 0;
+            animation: fadeIn 1s ease-in-out;
+        }
+        nav {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #e0e0e0;
+            font-size: 20px;
+            padding: 10px 20px;
+            transition: background 0.3s, transform 0.2s;
+        }
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: scale(1.05);
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: transparent;
+            padding: 40px 0;
+            margin-bottom: 60px;
+            opacity: 0;
+            animation: fadeInUp 1s ease-in-out forwards;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border-radius: 8px;
+            border: none;
+        }
+        footer {
+            font-size: 14px;
+            padding: 50px 0;
+            color: #888;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
-    <h1>Unavailable</h1>
-    <p>This Document Currently Has No Content Stored.</p>
+    <header>Alfz Aviation - LOA Calendar</header>
+    <nav>
+       <a href="/beta/">Home</a>
+       <a href="/beta/loa-calendar/">LOA Calendar</a>
+       <a href="/beta/about">About</a>
+       <a href="/beta/contact">Contact</a>
+    </nav>
+    <div class="container" id="calendar">
+        <h2>Leave of Absence Calendar</h2>
+        <p>Stay updated with planned Absences.</p>
+        <iframe src="https://calendar.google.com/calendar/embed?src=b56d14f977bc7226764127830b9ba1cbb03318b3ec771bc06d0e01da0d9f3fa3%40group.calendar.google.com&ctz=Europe%2FLondon"></iframe>
+    </div>
+    <footer>
+        &copy; 2025 Alfz Aviation
+    </footer>
 </body>
 </html>
