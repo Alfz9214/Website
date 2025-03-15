@@ -21,34 +21,38 @@
             padding: 50px 20px;
         }
         header {
-            font-size: 28px;
+            font-size: 32px;
             font-weight: bold;
             padding: 40px 0;
             animation: fadeIn 1s ease-in-out;
         }
         nav {
             display: flex;
-            gap: 30px;
+            gap: 20px;
             margin-bottom: 50px;
+            flex-wrap: wrap;
         }
         nav a {
             text-decoration: none;
             color: #e0e0e0;
-            font-size: 20px;
+            font-size: 18px;
             padding: 10px 20px;
-            transition: background 0.3s, transform 0.2s;
+            transition: all 0.3s ease;
             border-radius: 36px;
+            background: rgba(255, 255, 255, 0.05);
         }
         nav a:hover {
-            background: rgba(255, 255, 255, 0.1);
-            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
         }
         .container {
             max-width: 800px;
             width: 100%;
-            background: transparent;
-            padding: 40px 0;
+            padding: 40px;
             margin-bottom: 60px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
             opacity: 0;
             animation: fadeInUp 1s ease-in-out forwards;
         }
@@ -60,7 +64,7 @@
         }
         footer {
             font-size: 14px;
-            padding: 50px 0;
+            padding: 40px 0;
             color: #888;
         }
         @keyframes fadeIn {
@@ -76,14 +80,14 @@
 <body>
     <header>Alfz Aviation - LOA Calendar</header>
     <nav>
-       <a href="/beta/">Home</a>
-       <a href="/beta/loa-calendar/">LOA Calendar</a>
-       <a href="/beta/about">About</a>
-       <a href="/beta/contact">Contact</a>
+        <a href="/beta/">Home</a>
+        <a href="/beta/loa-calendar/">LOA Calendar</a>
+        <a href="/beta/about">About</a>
+        <a href="/beta/contact">Contact</a>
     </nav>
     <div class="container" id="calendar">
         <h2>Leave of Absence Calendar</h2>
-        <p>Stay updated with planned Absences.</p>
+        <p>Stay updated with planned absences.</p>
         <iframe src="https://calendar.google.com/calendar/embed?src=b56d14f977bc7226764127830b9ba1cbb03318b3ec771bc06d0e01da0d9f3fa3%40group.calendar.google.com&ctz=Europe%2FLondon"></iframe>
     </div>
     <footer>
